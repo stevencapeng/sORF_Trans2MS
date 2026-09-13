@@ -1,0 +1,50 @@
+{
+  "dataset_pkl": "/disk4hu/hejp/00_thesis/4_predict_translation/results/training_result/training_v3_2/stage2_v2_MSpp_ribotricer/stage2_v2_rnaesm_baselines_10runs/prepared_datasets/translation_strict_lenmatched_rnafm_esm2_run00.pkl",
+  "split_dir": "/disk4hu/hejp/00_thesis/4_predict_translation/results/training_result/training_v3_2/stage2_v2_MSpp_ribotricer/stage2_v2_rnaesm_baselines_10runs/generated_splits/run00",
+  "train_n": 20575,
+  "valid_n": 4409,
+  "test_n": 4410,
+  "columns": {
+    "rna_up": "rnafm_up_path",
+    "rna_orf": "rnafm_orf_path",
+    "rna_down": "rnafm_down_path",
+    "esm2": "esm2_path"
+  },
+  "config": {
+    "dataset_pkl": "/disk4hu/hejp/00_thesis/4_predict_translation/results/training_result/training_v3_2/stage2_v2_MSpp_ribotricer/stage2_v2_rnaesm_baselines_10runs/prepared_datasets/translation_strict_lenmatched_rnafm_esm2_run00.pkl",
+    "split_dir": "/disk4hu/hejp/00_thesis/4_predict_translation/results/training_result/training_v3_2/stage2_v2_MSpp_ribotricer/stage2_v2_rnaesm_baselines_10runs/generated_splits/run00",
+    "out_dir": "/disk4hu/hejp/00_thesis/4_predict_translation/results/training_result/training_v3_2/stage2_v2_MSpp_ribotricer/stage2_rnaesm_cnn_enhanced_position_10runs/enhanced_position/cnn_enhanced_position_run00",
+    "run_name": "cnn_enhanced_position_run00",
+    "config_name": "enhanced_position",
+    "seed": 42,
+    "threshold": 0.5,
+    "rna_up_col": null,
+    "rna_orf_col": null,
+    "rna_down_col": null,
+    "esm2_col": null,
+    "architecture": "enhanced",
+    "conv_hidden": 128,
+    "kernels": [
+      3,
+      5,
+      7
+    ],
+    "conv_depth": 1,
+    "pool_mode": "meanmax",
+    "position_channels": 4,
+    "protein_nterm_window": 0,
+    "branch_hidden": 256,
+    "fusion_hidden": 256,
+    "fusion_mode": "concat",
+    "upstream_padding": "left",
+    "dropout": 0.3,
+    "epochs": 50,
+    "batch_size": 512,
+    "lr": 0.0001,
+    "weight_decay": 0.0005,
+    "patience": 10,
+    "grad_clip": 1.0,
+    "num_workers": 2,
+    "scheduler": "plateau"
+  }
+}
