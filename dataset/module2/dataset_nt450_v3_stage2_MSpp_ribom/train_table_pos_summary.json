@@ -1,0 +1,26 @@
+{
+  "n_rows": 20000,
+  "n_cols": 11,
+  "columns": [
+    "sample_id",
+    "protein_accession",
+    "transcript_accession",
+    "protein_len_aa",
+    "orf_seq",
+    "upstream_seq_50nt",
+    "downstream_seq_50nt",
+    "orf_nt_len",
+    "label_raw",
+    "protein_len_aa",
+    "label_id"
+  ],
+  "label_order": [
+    "MS++|Ribo-"
+  ],
+  "label_map": {
+    "MS++|Ribo-": 0
+  },
+  "label_raw_counts": {
+    "MS++|Ribo-": 20000
+  }
+}
